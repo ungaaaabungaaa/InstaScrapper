@@ -60,6 +60,7 @@ def scrape_instagram_photos(usernames, batch_size=10, delay_between_batches=3600
         download_comments=False, 
         save_metadata=False,
         compress_json=False,
+        post_metadata_txt_pattern=None, # Disable .txt caption files
         quiet=False
     )
 
@@ -89,7 +90,13 @@ def scrape_instagram_photos(usernames, batch_size=10, delay_between_batches=3600
                 profile = instaloader.Profile.from_username(L.context, username)
                 
                 count = 0
+                max_photos = 100 # Limit to 100 photos per profile
+                
                 for post in profile.get_posts():
+                    if count >= max_photos:
+                        print(f"Reached limit of {max_photos} photos for {username}")
+                        break
+                        
                     if not post.is_video:
                         L.download_post(post, target=target_folder)
                         count += 1
