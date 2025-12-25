@@ -1,0 +1,33 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+venv/
+ENV/
+env/
+
+# Data and Logs
+*.log
+*.json
+*.txt
+!list.txt
+!requirements.txt
+!proxies.txt
+
+# Ignore all directories (which are created for scraped content)
+# This will ignore any folder created by the script (e.g. nike/, gucci/, etc.)
+*/
+**/
+
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+

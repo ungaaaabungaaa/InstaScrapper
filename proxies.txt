@@ -1,0 +1,7 @@
+# Add your proxies here, one per line.
+# Format options:
+# ip:port
+# username:password@ip:port
+# Example:
+# 123.45.67.89:8080
+
