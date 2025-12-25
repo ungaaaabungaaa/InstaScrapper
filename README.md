@@ -1,5 +1,7 @@
 # Instagram Photo Scraper
 
+![Thumbnail](thumnail.png)
+
 A robust Python script to scrape public photos from a list of Instagram usernames. Built with `instaloader`, it includes anti-blocking features like batching, random delays, and optional proxy rotation.
 
 ## Features
