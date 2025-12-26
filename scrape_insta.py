@@ -135,7 +135,7 @@ if __name__ == "__main__":
     
     if all_users:
         # To run just the FIRST 10 accounts once and exit, uncomment the line below:
-        all_users = all_users[:10]
+        # all_users = all_users[:10]
         
         # Configuration:
         # Batch size: 10
